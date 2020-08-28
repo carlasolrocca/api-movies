@@ -4,7 +4,7 @@ const moviesController = require('../controllers/moviesController')
 
 
 router.get('/', moviesController.getAll)
-router.get('/create', moviesController.create)
+router.post('/create', moviesController.create)
 router.get('/detail/:id', moviesController.getById)
 
 

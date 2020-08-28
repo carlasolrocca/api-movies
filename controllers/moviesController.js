@@ -4,7 +4,7 @@ module.exports = {
   getAll: function(req, res) {
     db.Movie.findAll()
     .then(function(result) {
-      return res.json(result)
+      return res.status(200).json(result)
     })
   },
   getById: function(req, res){
